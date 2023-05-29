@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  /* header  */
+  header{
+    top:0px;
+    background-color: transparent;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 120px;
+    display: grid;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+header .header_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center !important;
+    /* padding: 50px 0; */
+}
+header .header_logo a{
+    color: #FB811E;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    transition: all 0.5s;
+}
+header .header_logo a:hover{
+    color: black;    
+}
+header .header_logo a i{
+    position: absolute;
+    top: -10px;
+    left: 55px;
+    font-size: 20px;
+}
+header .header_content .header_nav ul{
+    list-style: none;
+}
+header .header_content .header_nav ul li{
+    display: inline;
+    margin-right: 50px;
+}
+header .header_content .navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #060606;
+    transition: all 0.5s;
+    font-weight: 500;
+}
+header .header_content .navbar ul li a:hover{
+    text-decoration: underline;
+    color: #FB811E;
+}
+header.inverted{
+    background-color: #fff;
+    box-shadow: 0 3px 5px 0.3px rgba(0, 0, 0, 0.1);
+}
+
+/* header .header_content .navbar .search{
+    margin: 0 10px 0 10px;
+} */
+   
+.search_and_theme input[type=search]
+{
+    background: white url(/img/searchicon.png) no-repeat 10px center;
+    border: solid 1px gray;
+    padding:20px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    transition: all 1s;
+    cursor: pointer;
+    border-radius: 35px;
+    text-align: center;
+}
+.search_and_theme{
+    display: flex;
+    justify-content: space-between;
+}
+.search_and_theme input[type=search]:focus{
+    width: 200px;
+}
+#switchButton {
+  background-color: transparent;
+  border: none;
+}
+#switchButton .fa-sun {
+  display: none;
+  color: #FB811E;
+  font-size: 25px;
+}
+#switchButton .fa-moon {
+  display: block;
+  color: #FB811E;
+  font-size: 25px;
+}
+.dark#myBody {
+  background-color: #353439;
+  color: white !important;
+}
+.dark #switchButton {
+  background-color: transparent;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+
+.banner_content{
+    margin: 15%;
+    margin-bottom:10%;
+    margin-left:11%;
+}
+.infor{
+    margin-left:11%
+}
+.infor .btn{
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    font-weight: 600;
+    background: #fb811e;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    transition: all .25s ease-in-out;
+}
+.infor .btn:hover{
+    background-color: green;
+    color: #fff;
+}
+.typo-wthree h4 {
+    color: black;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.bd-example {
+    padding: 2rem;
+    border-width: .2rem;
+    border: solid white;
+    margin-top: 1rem;
+}
+.jumbotron {
+    background-color: white;
+}
+.display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+}
+.btn-primary {
+    background-color: #FB811E;
+}
+
+.highlight {
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+}
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", courier, monospace;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
