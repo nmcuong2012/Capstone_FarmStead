@@ -373,6 +373,12 @@ nav ul li {
     color: var(--secondary-color);
     transition: all 1s;
 }
+@media (max-width: 480px) {
+    .discover_right_content{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
 
 /* root */
 :root {
