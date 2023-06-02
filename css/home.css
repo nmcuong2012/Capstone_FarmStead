@@ -431,19 +431,45 @@ nav ul li {
     color: var(--secondary-color);
     margin: 15px 0;
 }
-.card-body h3 a{
+.card-body a{
     color: var(--heading-color);
     font-weight: 600;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 30px;
+    display: block;
 }
-.card-body h3 a:hover{
+.card-body a:hover{
     color: var(--secondary-color);
     transition: all 0.5s;
 }
 .card-body .card-text{
     color: var(--font-color);
     margin: 15px 0;
+}
+@media (max-width: 576px) {
+    .services_title{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .services_text{
+        padding-left: 20px;
+    }
+    .card{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (max-width: 992px) {
+    .services_title{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .services_text{
+        padding-left: 20px;
+    }
+    .card{
+        margin: auto;
+    }
 }
 /* experience */
 .exp_title h3{
@@ -488,6 +514,35 @@ nav ul li {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: .2px;
+}
+/* field */
+.field_detail h4{
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+.field_detail p{
+    margin-top: 10px;
+}
+.field_item_content{
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 2rem 1rem;
+    transition: all 0.5s;
+}
+.field_item_content:hover{
+    border: 1px solid var(--border-color-light);
+    transition: all 0.5s;
+    box-shadow: -1px 2px 12px -9px var(--box-shadow);
+    background: var(--bg-color);
+}
+.field_item_content:hover h4{
+    color: var(--secondary-color);
+    transition: all 1s;
+}
+.field_item_content img{
+    height: 50%;
 }
 /* root */
 :root {
