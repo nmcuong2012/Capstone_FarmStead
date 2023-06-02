@@ -379,7 +379,71 @@ nav ul li {
         grid-template-columns: 1fr;
     }
 }
+/* services */
+.services{
+    background: var(--secondary-color);
+}
+.services_title{
+    z-index: 99;
+}
 
+.left_title h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+.left_title h3{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 55px;
+    color: #fff
+}
+.under_text{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    font-size: 14vw;
+    z-index: 0;
+    opacity: 0.3;
+    color: #fff;
+    font-weight: bold;
+    transform: translate(50%, 50%);
+}
+.services_text{
+    padding: 0;
+
+}
+.services_text p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body span{
+    display: inline-block;
+    padding: 5px 20px;
+    text-align: center;
+    background:rgb(0 159 77 / 16%);;
+    border-radius: 15px;
+    color: var(--secondary-color);
+    margin: 15px 0;
+}
+.card-body h3 a{
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+}
+.card-body h3 a:hover{
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
+.card-body .card-text{
+    color: var(--font-color);
+    margin: 15px 0;
+}
 /* root */
 :root {
     --theme-color: #e40000;
