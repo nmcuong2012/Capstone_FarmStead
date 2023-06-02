@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <header id="site-header" class="farm_header fixed-top nav-fixed">
+  <header id="site-header" class="farm_header fixed-top">
     <!-- place navbar here -->
     <div class="container">
         <div class="navbar navbar-expand-lg stroke">
@@ -58,6 +58,161 @@
         </div>
     </div>
   </header>
+
+  <!-- banner -->
+
+  <section class="banner">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center">
+        <!-- banner left -->
+        <div class="col-5 banner_left">
+          <div class="banner_left_content">
+            <h2 class="left_text">Farm</h2>
+            <div class="left_title">
+              <h3>Welcome to Farmstead 
+                <br>
+                where Natural Food is born!
+              </h3>
+              <p class="banner_text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium. 
+              </p>
+              <a class="btn btn-style mt-sm-5 mt-4" href="about">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 banner_right p-0 ml-auto">
+          <!-- banner -->
+          <div id="homepage_slider" class="banner_slide">
+  
+            <input type="radio" class="cs_anchor radio" name="slider" id="play1" checked="">
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide1">
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide2">
+            <input type="radio" class="cs_anchor radio" name="slider" id="slide3">
+  
+            <div class="images">
+              <div class="images_inner">
+                <div class="image_slide">
+                  <div class="banner_1">
+                    <style>
+                      .banner_1 {
+                        background-image: url(./img/b1.jpg);
+                      }
+                    </style>
+                    <div class="wrapper">
+                      <div class="slider_num d-grid grid-columns-auto">
+                        <h4>01<span>/03</span></h4>
+                        <p>
+                          Agriculture</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="image_slide">
+                  <div class="banner_2">
+                    <style>
+                      .banner_2 {
+                        background-image: url(./img/b8.jpg);
+                      }
+                    </style>
+                    <div class="wrapper">
+                      <div class="slider_num d-grid grid-columns-auto">
+                        <h4>02<span>/03</span></h4>
+                        <p>
+                          Farm Field</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="image_slide">
+                  <div class="banner_3">
+                    <style>
+                      .banner_3 {
+                        background-image: url(./img/b4.jpg);
+                      }
+                    </style>
+                    <div class="wrapper">
+                      <div class="slider_num d-grid grid-columns-auto">
+                        <h4>03<span>/03</span></h4>
+                        <p>
+                          Organic Farm</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="labels">
+              <div class="fake-radio">
+                <label for="slide1" class="radio-btn"></label>
+                <label for="slide2" class="radio-btn"></label>
+                <label for="slide3" class="radio-btn"></label>
+              </div>
+            </div>
+  
+          </div>
+          <!-- //banner -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="discover py-5">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="dicover_left col-lg-6">
+          <div class="discover_left_content">
+            <div class="left_title">
+              <h5 class="small_title">
+                Grow Naturally</h5>
+              <h3 class="big_title">
+                Leaders in the field
+              </h3>
+              <p class="discover_text">
+                Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit
+                amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.        
+              </p>
+              <a class="btn btn-style mt-sm-5 mt-4" href="about">DISCOVER MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="discover_right col-lg-6">
+          <div class="discover_right_content d-grid">
+            <div class="discover_item">
+              <div class="discover_icon">
+                <img src="./img/tree.png" alt="">
+              </div>
+              <h4>
+                <a href="about_us.html" class="item_title">Natural Products</a>
+              </h4>
+            </div>
+            <div class="discover_item">
+              <div class="discover_icon">
+                <img src="./img/tree1.png" alt="">
+              </div>
+              <h4>
+                <a href="about_us.html" class="item_title">Wheat Cultivation</a>
+              </h4>
+            </div>
+            <div class="discover_item ">
+              <div class="discover_icon">
+                <img src="./img/truck.png" alt="">
+              </div>
+              <h4>
+                <a href="about_us.html" class="item_title">Modern Truck</a>
+              </h4>
+            </div>
+            <div class="discover_item ">
+              <div class="discover_icon">
+                <img src="./img/tree2.png" alt="">
+              </div>
+              <h4>
+                <a href="about_us.html" class="item_title">Organic Products</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <!-- place footer here -->
   </footer>
@@ -71,6 +226,23 @@
   </script>
     <!-- js -->
     <script src="./js/home.js"></script>
-</body>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script><!-- slcik carosel -->
+  <!-- header scroll -->
+  <script>
+    
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  </script>
+  </body>
 
 </html>
