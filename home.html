@@ -14,6 +14,17 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fancybox -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <!-- css -->
     <link rel="stylesheet" href="./css/home.css">
 </head>
@@ -43,7 +54,7 @@
                 </div>
                 <div class="nav-item dropdown">
                     <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="fa fa-bars" aria-hidden="true"></span>
+                        <span class="fa fa-bars toogle_menu" aria-hidden="true"></span>
                       </a>
                       <ul class="dropdown-menu hide-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item menu_item" href="home.html">Home</a></li>
@@ -171,7 +182,7 @@
                 Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis eros et, sed commodo risus. Nullam sit
                 amet laoreet elit. Suspendisse non init magnaa velit efficitur, dolor eget ex fermentum.        
               </p>
-              <a class="btn btn-style mt-sm-5 mt-4" href="about">DISCOVER MORE</a>
+              <a class="btn-res btn btn-style mt-sm-5 mt-4" href="about">DISCOVER MORE</a>
             </div>
           </div>
         </div>
@@ -411,19 +422,76 @@
       </div>
     </div>
   </section>
+  <section class="products d-grid py-5">
+    <div class="container">
+      <div class="row d-flex products_content">
+        <div class="col-lg-3 col-md-6 col-sm-6 item1">
+          <h5 class="small_title">Gallery</h5>
+          <h2 class="big_title">Our Products</h2>
+          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
+          <a class="btn btn-style" href="about">DISCOVER MORE</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 products_item">
+          <a data-fancybox="gallery" data-src="./img/g2.jpg" data-caption="image 1" data-thumb="./img/g2.jpg">
+            <img src="./img/g2.jpg" alt="">
+          </a>
+          <h5>Fresh Carrots</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 products_item">
+          <a data-fancybox="gallery" data-src="./img/g3.jpg" data-caption="image 2" data-thumb="./img/g3.jpg">
+            <img src="./img/g3.jpg" alt="">
+          </a>
+          <h5>Strawberry</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 products_item">
+          <a data-fancybox="gallery" data-src="./img/g6.jpg" data-caption="image 3" data-thumb="./img/g6.jpg">
+            <img src="./img/g6.jpg" alt="">
+          </a>
+          <h5>Our Farm</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 products_item">
+          <a data-fancybox="gallery" data-src="./img/g5.jpg" data-caption="image 4" data-thumb="./img/g5.jpg">
+            <img src="./img/g5.jpg" alt="">
+          </a>
+          <h5>Fresh Apples</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 products_item">
+          <a data-fancybox="gallery" data-src="./img/g1.jpg" data-caption="image 5" data-thumb="./img/g1.jpg">
+            <img src="./img/g1.jpg" alt="">
+          </a>
+          <h5>Awsome Field</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 products_item">
+          <a data-fancybox="gallery" data-src="./img/g7.jpg" data-caption="image 6" data-thumb="./img/g7.jpg">
+            <img src="./img/g7.jpg" alt="">
+          </a>
+          <h5>Fresh Grapes</h5>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 products_item">
+          <a data-fancybox="gallery" data-src="./img/g8.jpg" data-caption="image 7" data-thumb="./img/g8.jpg">
+            <img src="./img/g8.jpg" alt="">
+          </a>
+          <h5>Hot Papper</h5>
+        </div>
+    </div>
+  </section>
   <footer>
     <!-- place footer here -->
+    
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
+  <!-- fancybox -->
 
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
     <!-- js -->
     <script src="./js/home.js"></script>
+    <script src="./js/fancybox.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script><!-- slcik carosel -->
