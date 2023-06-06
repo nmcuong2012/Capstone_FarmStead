@@ -1,24 +1,27 @@
-$(window).on("scroll", function() {
-    var scroll = $(window).scrollTop();
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
 
-    if (scroll >= 80) {
-        $("#site-header").addClass("nav-fixed");
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
     } else {
-        $("#site-header").removeClass("nav-fixed");
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
     }
-});
+}
 
-//Main navigation Active Class Add Remove
-$(".navbar-toggler").on("click", function() {
-    $("header").toggleClass("active");
-});
-$(document).on("ready", function() {
-    if ($(window).width() > 991) {
-        $("header").removeClass("active");
-    }
-    $(window).on("resize", function() {
-        if ($(window).width() > 991) {
-            $("header").removeClass("active");
-        }
-    });
-});
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("dark")
+})
