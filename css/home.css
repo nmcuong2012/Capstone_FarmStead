@@ -91,7 +91,7 @@ header {
     z-index: 99 !important;
     background-color: var(--bg-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-    height: 80px;
+    height: 100px;
 }
 
 header .navbar .navbar-expand-lg .stroke {
@@ -210,6 +210,12 @@ input:checked+.mode-container i.fa-moon {
 
 .dropdown-menu {
     transition: all 1s;
+    background-color: var(--bg-color);
+    color: var(--heading-color);
+}
+
+.dropdown-item {
+    color: var(--heading-color);
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -218,16 +224,35 @@ input:checked+.mode-container i.fa-moon {
     transition: all 0.5s;
 }
 
+.dropdown-menu.show {
+    display: block;
+    width: 300px;
+    height: 250px;
+    border: none;
+}
+
 .hide-menu li {
     float: left;
     list-style-type: none;
     position: relative;
     width: 100%;
+    margin-bottom: 10px;
 }
 
-.hide-menu a span {
+.hide-menu li:hover {
+    background-color: none;
+    transition: all 2s;
+}
+
+.hide-menu a {
     line-height: 1em;
-    color: black;
+    color: var(--heading-color);
+}
+
+.hide-menu a:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    transition: all 0.5s;
 }
 
 #switchButton {
@@ -577,6 +602,22 @@ input:checked+.mode-container i.fa-moon {
     font-weight: 300;
     margin: 0;
     padding: 0;
+}
+
+.card {
+    border-radius: 30px;
+    border: none;
+}
+
+.card-body {
+    background-color: var(--bg-color);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card-img-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .card-body span {
