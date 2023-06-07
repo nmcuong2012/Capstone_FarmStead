@@ -307,6 +307,10 @@ input:checked+.mode-container i.fa-moon {
     padding: 100px 50px 50px 50px;
 }
 
+.ct-title {
+    color: var(--heading-color);
+}
+
 .contact_ariapage a {
     color: var(--font-color);
     font-weight: bold;
@@ -531,6 +535,22 @@ footer p {
     --icon-gra-color: #fff;
     --shadow-color: rgb(23 19 19);
     --box-shadow: rgb(13 7 7);
+}
+
+#movetop {
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    border-radius: 4px;
 }
 
 a {
