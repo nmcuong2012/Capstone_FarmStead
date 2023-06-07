@@ -21,7 +21,6 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/home.css">
 
 </head>
 
@@ -42,11 +41,15 @@
                             <input type="search" name="s">
                         </form>
                     </div>
-                    <div class="theme_switch">
-                        <button class="btn" id="switchButton" title="Click to switch theme">
-                        <i class="far fa-moon"></i>
-                        <i class="far fa-sun"></i>
-                      </button>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" class="d-none">
+                        <div class="mode-container">
+                          <i class="far fa-moon"></i>
+                          <i class="far fa-sun"></i>
+                        </div>
+                      </label>
+                        </button>
                     </div>
                     <div class="nav-item dropdown">
                         <a role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -222,7 +225,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
     <!-- js -->
-    <script src="./js/home.js"></script>
     <script src="./js/fancybox.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -240,6 +242,7 @@
             }
         });
     </script>
+    <script src="./js/home.js"></script>
 </body>
 
 </html>
