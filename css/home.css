@@ -335,10 +335,10 @@ input:checked+.mode-container i.fa-moon {
 
 .images {
     overflow: hidden;
-    /* top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     border-bottom-left-radius: 20px;
 }
@@ -351,12 +351,21 @@ input:checked+.mode-container i.fa-moon {
 
 .image_slide {
     width: 20%;
-    /* float: left; */
+    float: left;
+}
+
+.banner_slide {
+    position: relative;
 }
 
 .banner_1,
 .banner_2,
 .banner_3 {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
     min-height: 100vh;
     padding: 40px 0;
     position: relative;
@@ -364,12 +373,12 @@ input:checked+.mode-container i.fa-moon {
     align-items: flex-end;
     justify-content: flex-end;
     text-align: center;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 0px;
     z-index: 0;
 }
 
-.banner_1,
-.banner_2,
+.banner_1::before,
+.banner_2::before,
 .banner_3::before {
     content: "";
     position: absolute;
@@ -414,6 +423,143 @@ input:checked+.mode-container i.fa-moon {
 
 .radio {
     display: none;
+}
+
+#slide1:checked~.images .images-inner {
+    margin-left: 0;
+}
+
+#slide2:checked~.images .images-inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~.images .images-inner {
+    margin-left: -200%;
+}
+
+
+/* Color of bullets */
+
+#slide1:checked~div .fake-radio .radio-btn:nth-child(1),
+#slide2:checked~div .fake-radio .radio-btn:nth-child(2),
+#slide3:checked~div .fake-radio .radio-btn:nth-child(3) {
+    background: var(--primary-color);
+}
+
+#slide1:checked~.labels .label:nth-child(1),
+#slide2:checked~.labels .label:nth-child(2),
+#slide3:checked~.labels .label:nth-child(3) {
+    opacity: 1;
+}
+
+.label {
+    opacity: 0;
+    position: absolute;
+}
+
+
+/* Text of slides - END */
+
+
+/* Calculate AUTOPLAY for BULLETS */
+
+@-webkit-keyframes bullet {
+    0%,
+    33.32333333333334% {
+        background: var(--primary-color);
+    }
+    33.333333333333336%,
+    100% {
+        background: white;
+    }
+}
+
+@keyframes bullet {
+    0%,
+    33.32333333333334% {
+        background: var(--primary-color);
+    }
+    33.333333333333336%,
+    100% {
+        background: white;
+    }
+}
+
+#play1:checked~div .fake-radio .radio-btn:nth-child(1) {
+    -webkit-animation: bullet 12300ms infinite -1000ms;
+    animation: bullet 12300ms infinite -1000ms;
+}
+
+#play1:checked~div .fake-radio .radio-btn:nth-child(2) {
+    -webkit-animation: bullet 12300ms infinite 3100ms;
+    animation: bullet 12300ms infinite 3100ms;
+}
+
+#play1:checked~div .fake-radio .radio-btn:nth-child(3) {
+    -webkit-animation: bullet 12300ms infinite 7200ms;
+    animation: bullet 12300ms infinite 7200ms;
+}
+
+
+/* Calculate AUTOPLAY for BULLETS - END */
+
+
+/* Calculate AUTOPLAY for SLIDES */
+
+@-webkit-keyframes slide {
+    0%,
+    25.203252032520325% {
+        margin-left: 0;
+    }
+    33.333333333333336%,
+    58.53658536585366% {
+        margin-left: -100%;
+    }
+    66.66666666666667%,
+    91.869918699187% {
+        margin-left: -200%;
+    }
+}
+
+@keyframes slide {
+    0%,
+    25.203252032520325% {
+        margin-left: 0;
+    }
+    33.333333333333336%,
+    58.53658536585366% {
+        margin-left: -100%;
+    }
+    66.66666666666667%,
+    91.869918699187% {
+        margin-left: -200%;
+    }
+}
+
+.banner_slide>#play1:checked~.images .images-inner {
+    -webkit-animation: slide 12300ms infinite;
+    animation: slide 12300ms infinite;
+}
+
+
+/* Calculate AUTOPLAY for SLIDES - END */
+
+
+/* //banner slider */
+
+
+/* background images for banner */
+
+.banner_1 {
+    background-position: top center;
+}
+
+.banner_2 {
+    background-position: top center;
+}
+
+.banner_3 {
+    background-position: top center;
 }
 
 @media (max-width:1150px) {
