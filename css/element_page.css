@@ -689,6 +689,14 @@ table {
     background-color: var(--bg-light);
 }
 
+.table-striped th {
+    color: var(--heading-color) !important;
+}
+
+.table-striped tr td {
+    color: var(--heading-color) !important;
+}
+
 .form-control {
     display: block;
     width: 100%;
