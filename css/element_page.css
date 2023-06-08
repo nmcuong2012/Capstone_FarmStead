@@ -55,8 +55,8 @@ html {
 
 body {
     padding: 0;
-    margin: 0!important;
-    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 !important;
+    font-family: "Source Sans Pro", sans-serif;
     background: var(--bg-color);
     color: var(--font-color);
 }
@@ -136,7 +136,7 @@ nav ul li {
     margin: 0;
 }
 
-input:checked+.mode-container i.fa-sun {
+input:checked + .mode-container i.fa-sun {
     display: block;
     cursor: pointer;
 }
@@ -150,7 +150,7 @@ input:checked+.mode-container i.fa-sun {
     cursor: pointer;
 }
 
-input:checked+.mode-container i.fa-moon {
+input:checked + .mode-container i.fa-moon {
     display: none;
     cursor: pointer;
 }
@@ -283,16 +283,15 @@ input:checked+.mode-container i.fa-moon {
     line-height: 1.5;
 }
 
-.search input[type=search]:focus {
+.search input[type="search"]:focus {
     width: 200px;
     text-indent: 20px;
 }
-   
-.search_and_theme input[type=search]
-{
+
+.search_and_theme input[type="search"] {
     background: white url(/img/searchicon.png) no-repeat 10px center;
     border: solid 1px gray;
-    padding:20px;
+    padding: 20px;
     width: 35px;
     height: 35px;
     line-height: 35px;
@@ -307,10 +306,14 @@ input:checked+.mode-container i.fa-moon {
     line-height: 1.2;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 .typo-wthree h4 {
@@ -335,41 +338,40 @@ h1 {
     font-weight: 600;
     color: var(--heading-color);
 }
-.search_and_theme{
+.search_and_theme {
     display: flex;
     justify-content: space-between;
 }
-.search_and_theme input[type=search]:focus{
+.search_and_theme input[type="search"]:focus {
     width: 200px;
 }
 #switchButton {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 #switchButton .fa-sun {
-  display: none;
-  color: #FB811E;
-  font-size: 25px;
+    display: none;
+    color: #fb811e;
+    font-size: 25px;
 }
 #switchButton .fa-moon {
-  display: block;
-  color: #FB811E;
-  font-size: 25px;
+    display: block;
+    color: #fb811e;
+    font-size: 25px;
 }
 .dark#myBody {
-  background-color: #353439;
-  color: white !important;
+    background-color: #353439;
+    color: white !important;
 }
 .dark #switchButton {
-  background-color: transparent;
+    background-color: transparent;
 }
 .dark #switchButton .fa-sun {
-  display: block;
+    display: block;
 }
 .dark #switchButton .fa-moon {
-  display: none;
+    display: none;
 }
-
 
 .banner {
     background-image: url(../img/inner-banner.png);
@@ -386,10 +388,10 @@ a {
 a:hover {
     color: var(--primary-color);
 }
-.infor{
-    margin-left:11%
+.infor {
+    margin-left: 11%;
 }
-.infor .btn{
+.infor .btn {
     font-size: 16px;
     line-height: 26px;
     text-transform: uppercase;
@@ -399,26 +401,53 @@ a:hover {
     border: none;
     color: #fff;
     border-radius: 30px;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
-.infor .btn:hover{
+.infor .btn:hover {
     background-color: green;
     color: #fff;
 }
 .typo-wthree h4 {
-    color: black;
+    color: var(--heading-color);
     font-size: 1.5em;
     text-transform: capitalize;
     font-weight: bold;
 }
 .bd-example {
     padding: 2rem;
-    border-width: .2rem;
-    border: solid white;
+    border-width: 0.2rem;
+    border: solid var(--bg-light);
     margin-top: 1rem;
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 0.2rem;
 }
 .jumbotron {
-    background-color: white;
+    background-color: var(--bg-light);
+}
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+        padding-top: 4rem;
+        padding-right: 2rem;
+        padding-bottom: 4rem;
+        padding-left: 2rem;
+    }
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+}
+.breadcrumb {
+    background-color: var(--bg-light);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: 0.25rem;
 }
 .display-4 {
     font-size: 3.5rem;
@@ -429,18 +458,20 @@ a:hover {
     font-size: 1.25rem;
     font-weight: 300;
 }
-.mb-4, .my-4 {
+.mb-4,
+.my-4 {
     margin-bottom: 1.5rem !important;
     margin-top: 1.5rem !important;
 }
 .btn-primary {
-    background-color: #FB811E;
+    background-color: #fb811e;
     transition: all 0.5s;
+    border: none;
 }
 .btn-primary:hover {
     background-color: #009f4d !important;
-  }
-  .btn-primary:hover {
+}
+.btn-primary:hover {
     color: #fff;
     background-color: #956fef;
     box-shadow: none;
@@ -456,7 +487,7 @@ a {
 }
 .highlight {
     padding: 1.5rem;
-    background-color: #fafafa;
+    background-color: var(--bg-light);
 }
 pre {
     background: #eee;
@@ -473,6 +504,9 @@ pre {
     font-size: 1.4em;
     font-weight: 600;
 }
+figure {
+    margin: 1em 0;
+}
 .s {
     color: #d44950;
 }
@@ -484,28 +518,22 @@ pre {
     font-size: 80%;
     color: #6c757d;
 }
-.blockquote-footer{
-    margin-top:0;
+.blockquote-footer {
+    margin-top: 0;
 }
 .text-right {
     text-align: right !important;
 }
-h1{
+h1 {
     font-weight: bold;
 }
-
-.bd-example {
-    padding: 2rem;
-    border-width: .2rem;
-    border: solid #fafafa;
-    margin-top: 1rem;
-}
 .bg-flex-item {
-    background-color: white;
-    border: 1px solid #eee;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color-light);
 }
 .bg-flex {
-    border: 1px solid #eee;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color-light);
 }
 .row {
     display: flex;
@@ -513,11 +541,16 @@ h1{
     margin-right: -15px;
     margin-left: -15px;
 }
+
+.card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color-light);
+}
 .form-group {
     margin-bottom: 1rem;
 }
 .badge-secondary {
-    background-color: #FB811E;
+    background-color: #fb811e;
 }
 .col-form-label {
     padding-top: calc(0.375rem + 1px);
@@ -532,8 +565,8 @@ h1{
     border-radius: 0;
 }
 .list-group-item {
-    background-color: #fafafa;
-    border: 1px solid #eee;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color-light);
 }
 .list-group {
     display: flex;
@@ -542,19 +575,15 @@ h1{
     margin-bottom: 0;
 }
 .list-group-item.active {
-    background-color: #FB811E;
+    background-color: #fb811e;
     border-color: #fb811e;
 }
 .badge-primary {
     background-color: #fb811e;
 }
-.bd-example {
-    padding: 2rem;
-    border-width: .2rem;
-    border: solid #fafafa;
-    margin-top: 1rem;
-}
-.single-post-content table tr:nth-child(even), table tr:nth-child(even) {
+
+.single-post-content table tr:nth-child(even),
+table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
@@ -566,7 +595,6 @@ h1{
 .btn-link:hover {
     color: #208c60;
     text-decoration: underline;
-
 }
 .table th, .table td {
     padding: 0.75rem;
@@ -575,23 +603,23 @@ h1{
 }
 
 .typo-wthree .table thead th, .typo-wthree .table th, .typo-wthree .table td {
-    border-bottom: 2px solid #fafafa;
+    border-bottom: 2px solid var(--bg-light);
 }
-.single-post-content table th, table th {
-    text-align: left;
-    background-color: #fafafa;
-    color: #060606;
-    border: 1px solid #ddd;
-    padding: 12px 12px;
-    width: 120px;
-}
+
 .single-post-content table td, table td, .single-post-content table th, table th {
     border: 1px solid #ddd;
     padding: 8px;
 }
+.typo-wthree .table {
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+table {
+    border-collapse: collapse;
+}
 .form-control {
-    background-color: #fafafa;
-    border: 1px solid #eee;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color-light);
 }
 .form-control {
     display: block;
@@ -606,8 +634,8 @@ h1{
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 /* footer */
 footer p {
     margin-top: 20px;
@@ -692,7 +720,7 @@ footer h3 {
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
     .footer_content {
         padding-left: 0;
         padding-right: 0;

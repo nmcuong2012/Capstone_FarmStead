@@ -307,10 +307,10 @@ input:checked+.mode-container i.fa-moon {
 .area-box a:hover{
     color:#fb811e;
 }
-a.title-head {
+h4 a.title-head {
     margin-top: 25px;
     display: block;
-    color: #fdfffc;
+    color: var(--heading-color);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 15px;
@@ -330,7 +330,7 @@ a {
 .area-box h4 a {
     margin-top: 25px;
     display: block;
-    color: black;
+    color: var(--heading-color);
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 15px;
@@ -363,6 +363,7 @@ h5.small-title {
     font-size: 40px;
     line-height: 50px;
     font-weight: bold;
+    color: var(--heading-color);
 }
 
 .grids_info span.fa {
@@ -415,7 +416,11 @@ h5.small-title {
     position: relative;
     z-index: 1;
 }
-
+.timer {
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--heading-color);
+}
 .btn-style {
     font-size: 16px;
     line-height: 26px;
@@ -436,8 +441,6 @@ h5.small-title {
 
 /* footer */
 
-
-/* footer */
 
 footer p {
     margin-top: 20px;
