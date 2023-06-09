@@ -392,7 +392,9 @@ input:checked+.mode-container i.fa-moon {
 footer p {
     margin-top: 20px;
 }
-
+footer h3{
+    color: var(--heading-color);
+}
 .footer_content {
     padding-left: 28px;
     padding-right: 28px;
