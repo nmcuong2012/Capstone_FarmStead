@@ -302,7 +302,7 @@ input:checked+.mode-container i.fa-moon {
     position: relative;
     z-index: 1;
     border-radius: 15px;
-    background-color: ;
+    /* background-color: ; */
     box-shadow: 0 1rem 3rem var(--shadow-color);
 }
 .area-box a:hover{
