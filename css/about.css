@@ -424,13 +424,19 @@ a:hover {
     background: white;
     cursor: pointer;
     border-radius: 2%;
+    margin: 10px 0;
 }
 
 .cyber_avai .avai_item img {
     border-radius: 2%;
 }
 
-
+.cyber_avai .avai_item h5 {
+ margin-top: 14px;
+}
+.text-black {
+    margin-bottom: 0px !important;
+}
 /* bot_banner */
 
 .bot_banner {
@@ -481,7 +487,7 @@ blockquote q {
 
 .bot_item_desc h3 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0 5px;
     color: #fff;
 }

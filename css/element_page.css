@@ -56,7 +56,7 @@ html {
 body {
     padding: 0;
     margin: 0 !important;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family:'Times New Roman', Times, serif;
     background: var(--bg-color);
     color: var(--font-color);
 }
@@ -301,11 +301,7 @@ input:checked+.mode-container i.fa-moon {
     text-align: center;
 }
 
-.display-4 {
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-}
+
 
 *,
 *::before,
@@ -447,7 +443,9 @@ a:hover {
 .jumbotron {
     background-color: var(--bg-light);
 }
-
+.display-1,.display-2,.display-3,.display-4{
+    color: var(--quote-text-color);
+}
 @media (min-width: 576px) {
     .jumbotron {
         padding: 4rem 2rem;
