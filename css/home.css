@@ -332,6 +332,8 @@ input:checked+.mode-container i.fa-moon {
 .banner_slide {
     position: relative;
     overflow: hidden;
+    border-bottom-left-radius: 35px;
+    
 }
 
 .images {
@@ -348,11 +350,6 @@ input:checked+.mode-container i.fa-moon {
 
 .image_slide {
     flex: 0 0 100%;
-}
-
-.banner_slide {
-    position: relative;
-    overflow: hidden;
 }
 
 .banner_1,
