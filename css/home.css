@@ -188,7 +188,7 @@ input:checked+.mode-container i.fa-moon {
     top: -10px;
     left: 55px;
     font-size: 20px;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .fixed-top {
@@ -636,7 +636,7 @@ input:checked+.mode-container i.fa-moon {
 
 .item_title:hover {
     color: var(--secondary-color);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 @media (max-width: 480px) {
@@ -851,7 +851,7 @@ input:checked+.mode-container i.fa-moon {
 
 .field_item_content:hover h4 {
     color: var(--secondary-color);
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .field_item_content img {
