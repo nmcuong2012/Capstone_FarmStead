@@ -316,6 +316,7 @@ input:checked+.mode-container i.fa-moon {
 }
 .area-box a:hover{
     color:#fb811e;
+    transition: all 0.5s;
 }
 h4 a.title-head {
     margin-top: 25px;
