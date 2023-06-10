@@ -299,6 +299,7 @@ input:checked+.mode-container i.fa-moon {
 .search input[type=search]:focus {
     width: 200px;
     text-indent: 20px;
+    outline: none;
 }
 
 
