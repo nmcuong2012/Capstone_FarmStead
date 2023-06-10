@@ -606,3 +606,6 @@ p {
     line-height: 27px;
     color: var(--font-color);
 }
+.highlight_input {
+    border: 2px solid red;
+}

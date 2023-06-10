@@ -359,7 +359,9 @@ a {
     margin-right: -15px;
     margin-left: -15px;
 }
-
+.ServicesPageFWP h4{
+    color: var(--heading-color);
+}
 .pb-5,
 .py-5 {
     padding-bottom: 3rem !important;
