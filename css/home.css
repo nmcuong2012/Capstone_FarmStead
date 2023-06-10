@@ -304,8 +304,6 @@ input:checked+.mode-container i.fa-moon {
 
 /* banner */
 
-.banner {}
-
 .banner_left {
     position: absolute;
     left: 10em;
@@ -584,7 +582,6 @@ input:checked+.mode-container i.fa-moon {
 
 /* discover */
 
-.discover_left {}
 
 .discover_right_content {
     grid-template-columns: 1fr 1fr;
@@ -659,7 +656,6 @@ input:checked+.mode-container i.fa-moon {
     background: var(--secondary-color);
 }
 
-.services_title {}
 
 .services_left_title h5 {
     font-size: 22px;
