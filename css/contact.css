@@ -56,8 +56,18 @@ html {
 body {
     padding: 0;
     margin: 0!important;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background: var(--bg-color);
+    color: var(--font-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Volkhov', serif;
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 17px;
+    line-height: 27px;
     color: var(--font-color);
 }
 
@@ -316,7 +326,10 @@ input:checked+.mode-container i.fa-moon {
     color: var(--font-color);
     font-weight: bold;
 }
-
+.contact_ariapage a:hover {
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
 .small_title {
     margin-bottom: 12px;
     color: var(--primary-color);
