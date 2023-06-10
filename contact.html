@@ -132,18 +132,19 @@
                 <div class="col-lg-7 contact_right">
                     <div class="form_input">
                         <form action="" class="contact_form" method="post">
-                            <input type="text" class="contact_input" placeholder="Your Name*" required>
-                            <input type="email" class="contact_input" placeholder="Your email*" required>
-                            <input type="text" class="contact_input" placeholder="Subject" required>
-                            <input type="text" class="contact_input" placeholder="Website URL" required>
+                            <input type="text" id="name_input" class="contact_input" placeholder="Your Name*" required>
+                            <input type="email" id="email_input" class="contact_input" placeholder="Your email*" required>
+                            <input type="text" id="subject_input" class="contact_input" placeholder="Subject" required>
+                            <input type="text" id="url_input" class="contact_input" placeholder="Website URL" required>
                         </form>
                     </div>
                     <div class="form_message">
                         <form action="" class="contact_message">
-                            <textarea name="" id="" cols="30" rows="5" placeholder="Type your message here" class="message_area"></textarea>
+                            <textarea name="" id="message_input" cols="30" rows="5" placeholder="Type your message here" class="message_area"></textarea>
                         </form>
                     </div>
-                    <button class="btn btn-style">Send Message</button>
+                    <div id="warning_message" style="display: none;">Please fill in the required fields.</div>
+                    <button class="btn btn-style" onclick="validateForm()">Send Message</button>
                 </div>
             </div>
         </div>
@@ -245,6 +246,34 @@
                 $("#site-header").removeClass("nav-fixed");
             }
         });
+    </script>
+    <script>
+      function validateForm() {
+        var inputs = document.getElementsByClassName('contact_input');
+        var warningMessage = document.getElementById('warning_message');
+        var firstEmptyInput = null;
+
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].value === '') {
+                if (!firstEmptyInput) {
+                    firstEmptyInput = inputs[i];
+                }
+                inputs[i].classList.add('highlight_input');
+            } else {
+                inputs[i].classList.remove('highlight_input');
+            }
+        }
+
+        if (firstEmptyInput) {
+            firstEmptyInput.focus();
+        }
+
+        if (!firstEmptyInput) {
+            warningMessage.style.display = 'none';
+        } else {
+            warningMessage.style.display = 'block';
+        }
+    }
     </script>
     <script src="./js/home.js"></script>
 </body>
